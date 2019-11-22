@@ -59,7 +59,7 @@ services:
     image: subzerocloud/openresty
     command: ["/usr/bin/openresty", "-g", "daemon off; error_log /dev/stderr info;"]
     ports:
-      - "8181:80"
+      - "8899:80"
     links:
       - db:db
       - postgrest:postgrest
